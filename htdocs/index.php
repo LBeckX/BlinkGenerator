@@ -12,6 +12,7 @@
 </head>
 <body>
 <div id="LEFT">
+    <div id="HEADER"><h1>GlowBlink Generator</h1></div>
     <div id="GLOWBLINK_BOX">
         <div id="GLOWBLINK_ELEMENT"></div>
     </div>
