@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="files/css/design.css">
     <script src="files/js/generate.js" type="text/javascript"></script>
     <style></style>
+    <link rel="shortcut icon" href="files/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="files/favicon/favicon.ico" type="image/x-icon">
 </head>
 <body>
 <div id="LEFT">
