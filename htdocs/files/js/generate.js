@@ -63,7 +63,6 @@ function upadteOutputText() {
         '0%,100%{background-color: #'+colorOne+';}\n' +
         '50%{background-color: #'+colorTwo+';}\n' +
         '}\n' +
-
         '#GLOWBLINK_ELEMENT{\n' +
         'animation-name:glowblink;\n' +
         'animation-duration:'+(speedInMs/1000)+'s;\n' +
@@ -76,9 +75,8 @@ function upadteOutputText() {
 
     document.getElementsByTagName('style')[0].innerHTML = outputCSS;
 
-    outputTextAreaCSS.innerText = outputCSS;
-    outputTextAreaHTML.innerText = outputHtml;
-
+    outputTextAreaCSS.innerHTML = outputCSS;
+    outputTextAreaHTML.innerHTML = outputHtml;
 }
 
 function copyToClipboard() {
