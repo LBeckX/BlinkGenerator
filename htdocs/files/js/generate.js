@@ -77,6 +77,10 @@ function upadteOutputText() {
 
     outputTextAreaCSS.innerHTML = outputCSS;
     outputTextAreaHTML.innerHTML = outputHtml;
+
+    textareaHeight(outputTextAreaCSS);
+    textareaHeight(outputTextAreaHTML);
+
 }
 
 function copyToClipboard() {
@@ -107,4 +111,9 @@ function addRemoveClass(element,className,timeInMs) {
     setTimeout(function () {
         element.className = element.className.replace(className,'');
     },timeInMs)
+}
+
+function textareaHeight(element) {
+    element.style.height = "1px";
+    element.style.height = (25+element.scrollHeight)+"px";
 }
