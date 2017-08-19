@@ -20,7 +20,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
+    outline: none !important;
 }
 html{
     width: 100%;
@@ -37,23 +38,26 @@ body{
     flex-direction: row;
     flex-wrap: nowrap;
     overflow: hidden;
+    background: #292929 url("/files/img/background_web.jpg") no-repeat scroll center center;
+    background-size: cover;
 }
 
 #LEFT,#RIGHT{
     width: 50%;
     height: 100.1%;
     max-height: 100%;
-    padding: 3%;
+    padding: 20px 3%;
     box-sizing: border-box;
     overflow-y: auto;
 }
 
 #LEFT{
-    background-color: #212121;
+    background-color: rgba(33,33,33,.95);
 }
 
 #RIGHT{
-    background-color: #00FFB8;
+    background-color: rgba(0,255,184,.95);
+    padding-top: 60px;
 }
 
 #HEADER{
@@ -76,13 +80,18 @@ label{
     margin: 0 0 20px 0;
 }
 
-input{
+input,select{
     width: 60%;
     height: 40px;
     padding: 0 15px;
     font-size: 20px;
     box-sizing: border-box;
     text-transform:uppercase;
+    background-color: rgba(255,255,255,.95);
+    border:0;
+}
+input:active,input:focus,input:hover,select:active,select:focus,select:hover{
+    background-color: rgba(255,255,255,1);
 }
 
 .form_output{
@@ -92,11 +101,20 @@ input{
 textarea{
     width: 60%;
     max-width: 60%;
-    height: auto;
+    max-height: 50px;
     padding: 0 15px;
-    font-size: 15px;
+    resize: none;
     box-sizing: border-box;
+    transition: all 1s;
+    -webkit-transition:all 1s;
     overflow: hidden;
+    background-color: rgba(255,255,255,.8);
+    border:0;
+}
+textarea:active,textarea:focus{
+    max-height: 1000px;
+    background-color: #292929;
+    color: #50FF63;
 }
 
 #GLOWBLINK_BOX{
@@ -107,30 +125,53 @@ textarea{
 }
 
 #GLOWBLINK_ELEMENT{
-    width: 100px;
+    width: 50%;
     height: 150px;
     background-color: #000;
     position: absolute;
-    left: 50%;
+    left: 25%;
     top: 50%;
-    margin: -75px 0 0 -50px;
+    margin: -75px 0 0 0;
 }
 
 #OUTPUT_MSG{
-    margin: 20px 0 0 0;
-    background-color: antiquewhite;
+    position: fixed;
+    top:50%;
+    left: 30%;
+    width: 40%;
     max-height: 0;
+    margin: -50px 0 0 0;
+    background-color: antiquewhite;
     overflow: hidden;
-    width: 100%;
     text-align: center;
     padding: 0;
-    box-sizing: border-box;
-    transition: padding .1s,height .1s;
-    -webkit-transition:padding .1s,height .1s;
+    box-sizing:border-box;
+    transition:all .5s;
+    -webkit-transition:all .5s;
+    opacity: 0;
+    font-size: 30px;
 }
 
 #OUTPUT_MSG.open{
-    min-height: 50px;
-    max-height: 100%;
+    min-height: 70px;
+    max-height: 1000px;
     padding: 20px 0;
+    opacity: 1;
+}
+
+button{
+    min-width: 200px;
+    padding: 5px 15px;
+    font-size: 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 20px 20px 20px 0;
+    background-color: rgba(255,255,255,0);
+    cursor: pointer;
+    display: inline-block;
+    text-transform:uppercase;
+    transition: all .1s;
+}
+button:hover{
+    background-color: rgba(255,255,255,.05);
 }
