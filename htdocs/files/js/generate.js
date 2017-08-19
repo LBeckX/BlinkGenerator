@@ -17,7 +17,9 @@ var inputElementSpeed,
     outputTextAreaCSS,
     outputTextAreaHTML,
     outputTextMSG,
-    animationElement;
+    animationElement,
+    inputElementOpenInfoBox,
+    elementInfoBox;
 
 document.addEventListener("DOMContentLoaded", function () {
     inputElementSpeed=document.getElementById("INPUT_SPEED");
@@ -32,7 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
     outputTextAreaHTML=document.getElementById("OUTPUT_HTML_CODE");
     outputTextMSG=document.getElementById("OUTPUT_MSG");
     animationElement=document.getElementById("GLOWBLINK_ELEMENT");
-
+    inputElementOpenInfoBox=document.getElementById("OPEN_INFO");
+    elementInfoBox=document.getElementById("INFO_BOX");
 
     var inputElements = document.getElementsByTagName("input");
     for (var i=0;i<inputElements.length;i++){
@@ -48,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     optionElementStartBreak.addEventListener("click",startStopAnimation);
     outputTextAreaCSS.addEventListener("click",copyToClipboard);
     outputTextAreaHTML.addEventListener("click",copyToClipboard);
+    inputElementOpenInfoBox.addEventListener("click",openCloseInfoBox);
 
     addModifiedInput();
 }, false);
@@ -172,8 +176,17 @@ function startStopAnimation() {
     }
 }
 
+function openCloseInfoBox() {
+    if(hasClass(elementInfoBox,"open")){
+        removeClass(elementInfoBox,"open");
+    }
+    else {
+        addClass(elementInfoBox,"open");
+    }
+}
+
 function hasClass(element,className) {
-    if (animationElement.classList.contains('animation')) {
+    if (element.classList.contains(className)) {
         return true;
     }
 }

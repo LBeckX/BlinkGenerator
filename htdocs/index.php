@@ -74,5 +74,18 @@
     </form>
 </div>
 <div id="OUTPUT_MSG"></div>
+<button id="OPEN_INFO">Informations</button>
+<div id="INFO_BOX">
+    <p>
+        Hi there,<br>
+        You can find me on:
+    </p>
+    <ul>
+        <li><a target="_blank" href="//www.facebook.com/lukas.beck36">Facebook</a></li>
+        <li><a target="_blank" href="//github.com/LBeckX">GitHub</a></li>
+        <li><a target="_blank" href="//www.unitgreen.com">Homepage</a></li>
+        <li><a href="&#109;&#097;&#105;&#108;&#116;&#111;&#058;&#108;&#098;&#064;&#117;&#110;&#105;&#116;&#103;&#114;&#101;&#101;&#110;&#046;&#099;&#111;&#109;">lb(at)unitgreen.com</a></li>
+    </ul>
+</div>
 </body>
 </html>

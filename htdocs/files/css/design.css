@@ -22,6 +22,7 @@
     padding: 0;
     font-family: 'Roboto', sans-serif !important;
     outline: none !important;
+    color: #111;
 }
 html{
     width: 100%;
@@ -40,6 +41,10 @@ body{
     overflow: hidden;
     background: #292929 url("/files/img/background_web.jpg") no-repeat scroll center center;
     background-size: cover;
+}
+
+a{
+    color: #111;
 }
 
 #LEFT,#RIGHT{
@@ -61,8 +66,11 @@ body{
 }
 
 #HEADER{
-    color: #fff;
     margin-bottom: 20px;
+}
+
+#HEADER h1{
+    color: #fff;
 }
 
 form{
@@ -175,3 +183,27 @@ button{
 button:hover{
     background-color: rgba(255,255,255,.05);
 }
+
+#OPEN_INFO{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+#INFO_BOX{
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(255,255,255,.9);
+    max-height: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+#INFO_BOX.open{
+    max-height: 100%;
+    overflow: scroll;
+    padding: 50px;
+}
+
