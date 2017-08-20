@@ -1,12 +1,16 @@
-var outputCSS = "";
-var outputHtml = "";
-var speedInMs = "1500";
-var colorOne = "212121";
-var colorTwo = "00FFB8";
-var timingFunction = "linear";
-var iterationCount="0";
-var delayInMs = "0";
-var inputElementSpeed,
+/**
+ *
+ * @type {string|object}
+ */
+var outputCSS = "",
+    outputHtml = "",
+    speedInMs = "1500",
+    colorOne = "212121",
+    colorTwo = "00FFB8",
+    timingFunction = "linear",
+    iterationCount="0",
+    delayInMs = "0",
+    inputElementSpeed,
     inputElementColorOne,
     inputElementColorTwo,
     inputElementIterationCount,
@@ -45,6 +49,11 @@ document.addEventListener("DOMContentLoaded", function () {
     var selectElements = document.getElementsByTagName("select");
     for (var j=0;j<selectElements.length;j++){
         selectElements[j].addEventListener("change",addModifiedInput);
+    }
+
+    var closeInfoBoxElements = document.getElementsByClassName("infoBoxClose");
+    for (var k=0;k<closeInfoBoxElements.length;k++){
+        closeInfoBoxElements[k].addEventListener("click",closeInfoBox);
     }
 
     optionElementRestart.addEventListener("click",restartAnimation);
@@ -182,6 +191,12 @@ function openCloseInfoBox() {
     }
     else {
         addClass(elementInfoBox,"open");
+    }
+}
+
+function closeInfoBox() {
+    if(hasClass(elementInfoBox,"open")){
+        removeClass(elementInfoBox,"open");
     }
 }
 

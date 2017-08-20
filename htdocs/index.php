@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>GlowBlink Generator</title>
-    <meta name="description" content="Erstelle Dir automatisch einen Blinkeffekt (CSS)">
+    <title>Blink Generator</title>
+    <meta name="description" content="Create your own blink-effect with keyframes in CSS">
     <meta charset="utf-8">
-    <meta name="author" content="Lukas Beck <lb@1601.com>">
+    <meta name="author" content="Lukas Beck <lb(at)1601.com>">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i" rel="stylesheet">
     <link rel="stylesheet" href="files/css/design.css">
     <script src="files/js/generate.js" type="text/javascript"></script>
-    <style></style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="files/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="files/favicon/favicon.ico" type="image/x-icon">
+    <meta name="robots" content="index,follow" />
+    <meta name="language" content="en">
+    <meta name="keywords" content="CSS,css,keyframes,blink,glow,effect,en,de,github,lbeckx,javascript">
+    <meta property="og:title" content="Blink Generator CSS" />
+    <meta property="og:url" content="//glowgen.beck.freigabeserver.de/" />
+    <meta property="og:image" content="/files/img/blink_shot.JPG" />
+    <meta property="og:description" content="Create your own blink-effect with keyframes in CSS" />
+    <meta property="og:type"   content="website" />
+    <style></style>
 </head>
 <body>
-<div id="LEFT">
-    <div id="HEADER"><h1>GlowBlink Generator</h1></div>
+<div id="LEFT" class="infoBoxClose">
+    <div id="HEADER"><h1>Blink Generator</h1></div>
     <div id="GLOWBLINK_BOX">
-        <div id="GLOWBLINK_ELEMENT" class="animation"></div>
+        <div id="GLOWBLINK_ELEMENT" class="animation"><noscript>Your browser does not support JavaScript! Please enable it...</noscript></div>
     </div>
 
     <div class="option_present">
@@ -25,7 +34,7 @@
     </div>
 </div>
 
-<div id="RIGHT">
+<div id="RIGHT" class="infoBoxClose">
     <form id="GENERATOR_FORM">
         <div class="form_input">
             <label for="INPUT_SPEED">Speed in ms</label>
@@ -33,12 +42,12 @@
         </div>
 
         <div class="form_input">
-            <label for="INPUT_COLOR_ONE">Color one #</label>
+            <label for="INPUT_COLOR_ONE">Color one in hex (use <a target="_blank" href="//htmlcolorcodes.com/color-picker/">ColorPicker</a>)</label>
             <input type="text" name="color1" id="INPUT_COLOR_ONE" placeholder="FFFFFF" minlength="3" maxlength="6">
         </div>
 
         <div class="form_input">
-            <label for="INPUT_COLOR_TWO">Color two #</label>
+            <label for="INPUT_COLOR_TWO">Color two in hex (use <a target="_blank" href="//htmlcolorcodes.com/color-picker/">ColorPicker</a>)</label>
             <input type="text" name="color2" id="INPUT_COLOR_TWO" placeholder="BBBBBB" minlength="3" maxlength="6">
         </div>
 
@@ -76,16 +85,24 @@
 <div id="OUTPUT_MSG"></div>
 <button id="OPEN_INFO">Informations</button>
 <div id="INFO_BOX">
-    <p>
-        Hi there,<br>
-        You can find me on:
-    </p>
-    <ul>
-        <li><a target="_blank" href="//www.facebook.com/lukas.beck36">Facebook</a></li>
-        <li><a target="_blank" href="//github.com/LBeckX">GitHub</a></li>
-        <li><a target="_blank" href="//www.unitgreen.com">Homepage</a></li>
-        <li><a href="&#109;&#097;&#105;&#108;&#116;&#111;&#058;&#108;&#098;&#064;&#117;&#110;&#105;&#116;&#103;&#114;&#101;&#101;&#110;&#046;&#099;&#111;&#109;">lb(at)unitgreen.com</a></li>
-    </ul>
+    <div class="closeButton infoBoxClose">X</div>
+    <div class="head">You can find me here:</div>
+    <div class="mid">
+        <div class="fb">
+            <a target="_blank" href="//www.facebook.com/lukas.beck36"></a>
+        </div>
+        <div class="github">
+            <a target="_blank" href="//github.com/LBeckX"></a>
+        </div>
+        <div class="homepage">
+            <a target="_blank" href="//www.unitgreen.com"></a>
+        </div>
+    </div>
+    <div class="footer">
+        Contact: <a href="&#109;&#097;&#105;&#108;&#116;&#111;&#058;&#108;&#098;&#064;&#117;&#110;&#105;&#116;&#103;&#114;&#101;&#101;&#110;&#046;&#099;&#111;&#109;">lb(at)unitgreen.com</a>
+        <br>
+        <a href="//www.unitgreen.com/meta/impressum.php">Impressum / Datenschutz</a>
+    </div>
 </div>
 </body>
 </html>

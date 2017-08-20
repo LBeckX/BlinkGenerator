@@ -47,6 +47,10 @@ a{
     color: #111;
 }
 
+ul{
+    padding: 0 0 0 25px;
+}
+
 #LEFT,#RIGHT{
     width: 50%;
     height: 100.1%;
@@ -116,7 +120,7 @@ textarea{
     transition: all 1s;
     -webkit-transition:all 1s;
     overflow: hidden;
-    background-color: rgba(255,255,255,.8);
+    background-color: rgba(255,255,255,.95);
     border:0;
 }
 textarea:active,textarea:focus{
@@ -192,18 +196,97 @@ button:hover{
 
 #INFO_BOX{
     position: fixed;
-    top: 10%;
-    left: 10%;
-    width: 80%;
-    height: 80%;
-    background-color: rgba(255,255,255,.9);
+    top: 25%;
+    left: 25%;
+    width: 50%;
     max-height: 0;
     overflow: hidden;
     box-sizing: border-box;
-}
-#INFO_BOX.open{
-    max-height: 100%;
-    overflow: scroll;
-    padding: 50px;
+    transition: all .3s;
 }
 
+#INFO_BOX.open{
+    max-height: 100%;
+}
+
+#INFO_BOX .head{
+    color: #fff;
+}
+
+#INFO_BOX .mid{
+    background-color: rgba(33,33,33,.95);
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #fff;
+}
+
+#INFO_BOX .mid div{
+    height: 300px;
+    width: 33%;
+    flex-grow: 1;
+    flex-basis: auto;
+}
+
+#INFO_BOX a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#INFO_BOX .mid div a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: background .2s;
+}
+
+#INFO_BOX .mid div.fb a{
+    background: #3B5998 url("/files/img/facebook-logo.jpg") no-repeat center center;
+    background-size: 100% auto;
+}
+
+#INFO_BOX .mid div.fb a:hover{
+    background-size: 110% auto;
+}
+
+#INFO_BOX .mid div.github a{
+    background: #24292E url("/files/img/github-logo.jpg") no-repeat center center;
+    background-size: 100% auto;
+}
+
+#INFO_BOX .mid div.github a:hover{
+    background-size: 110% auto;
+}
+
+#INFO_BOX .mid div.homepage a{
+    background: #3F3F3F url("/files/img/UG_LOGO.png") no-repeat center center;
+    background-size: 80% auto;
+}
+
+#INFO_BOX .mid div.homepage a:hover{
+    background-size: 90% auto;
+}
+
+#INFO_BOX .footer{
+    color: #fff;
+}
+
+
+.closeButton{
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    width: 40px;
+    box-sizing: border-box;
+    height: 40px;
+    border: 1px solid rgba(255,255,255,.9);
+    background-color: rgba(255,255,255,0);
+    font-size: 33px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    transition: background .2s;
+}
+
+.closeButton:hover{
+    background-color: rgba(255,255,255,.3);
+}
