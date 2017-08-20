@@ -290,3 +290,14 @@ button:hover{
 .closeButton:hover{
     background-color: rgba(255,255,255,.3);
 }
+
+@media (max-width:1000px){
+    input,textarea,label,select{
+        width: 100%;
+        max-width: 100%;
+    }
+    #INFO_BOX{
+        width: 90%;
+        left: 5%;
+    }
+}
