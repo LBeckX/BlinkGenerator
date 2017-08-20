@@ -82,9 +82,9 @@ form{
 }
 
 label{
-    min-width: 20%;
     display: block;
     font-size: 20px;
+    width: 60%;
 }
 
 .form_input,.form_output{
@@ -241,29 +241,29 @@ button:hover{
 
 #INFO_BOX .mid div.fb a{
     background: #3B5998 url("/files/img/facebook-logo.jpg") no-repeat center center;
-    background-size: 100% auto;
+    background-size: 90% auto;
 }
 
 #INFO_BOX .mid div.fb a:hover{
-    background-size: 110% auto;
-}
-
-#INFO_BOX .mid div.github a{
-    background: #24292E url("/files/img/github-logo.jpg") no-repeat center center;
     background-size: 100% auto;
 }
 
+#INFO_BOX .mid div.github a{
+    background: #24292E url("/files/img/github-logo.png") no-repeat center center;
+    background-size: 80% auto;
+}
+
 #INFO_BOX .mid div.github a:hover{
-    background-size: 110% auto;
+    background-size: 90% auto;
 }
 
 #INFO_BOX .mid div.homepage a{
     background: #3F3F3F url("/files/img/UG_LOGO.png") no-repeat center center;
-    background-size: 80% auto;
+    background-size: 60% auto;
 }
 
 #INFO_BOX .mid div.homepage a:hover{
-    background-size: 90% auto;
+    background-size: 70% auto;
 }
 
 #INFO_BOX .footer{
@@ -275,12 +275,12 @@ button:hover{
     position: absolute;
     top: 35px;
     right: 10px;
-    width: 40px;
+    width: 30px;
+    height: 30px;
     box-sizing: border-box;
-    height: 40px;
     border: 1px solid rgba(255,255,255,.9);
     background-color: rgba(255,255,255,0);
-    font-size: 33px;
+    font-size: 23px;
     text-align: center;
     cursor: pointer;
     color: #fff;

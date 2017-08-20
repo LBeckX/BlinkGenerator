@@ -5,9 +5,6 @@
     <meta name="description" content="Create your own blink-effect with keyframes in CSS">
     <meta charset="utf-8">
     <meta name="author" content="Lukas Beck <lb(at)1601.com>">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i" rel="stylesheet">
-    <link rel="stylesheet" href="files/css/design.css">
-    <script src="files/js/generate.js" type="text/javascript"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="files/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="files/favicon/favicon.ico" type="image/x-icon">
@@ -19,6 +16,13 @@
     <meta property="og:image" content="/files/img/blink_shot.JPG" />
     <meta property="og:description" content="Create your own blink-effect with keyframes in CSS" />
     <meta property="og:type"   content="website" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i" rel="stylesheet">
+    <link rel="stylesheet" href="files/css/design.css">
+    <script type="text/javascript" LANGUAGE="JavaScript">
+        window.onbeforeunload = function(e) {
+            return 'Are you sure you want to close this site?';
+        };
+    </script>
     <style></style>
 </head>
 <body>
@@ -105,4 +109,5 @@
     </div>
 </div>
 </body>
+<script src="files/js/generate.js" type="text/javascript"></script>
 </html>
