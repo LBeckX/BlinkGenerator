@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Blink Generator</title>
-    <meta name="description" content="Create your own blink-effect with keyframes in CSS">
+    <title>BlinkGenerator123 - blinkgenerator.webitfactory.com/</title>
+    <meta name="description" content="Create your own blink-effect with keyframes in CSS3 - Checkout blinkgenerator.webitfactory.com">
     <meta charset="utf-8">
     <meta name="author" content="Lukas Beck <lb(at)1601.com>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +10,11 @@
     <link rel="icon" href="files/favicon/favicon.ico" type="image/x-icon">
     <meta name="robots" content="index,follow" />
     <meta name="language" content="en">
-    <meta name="keywords" content="CSS,css,keyframes,blink,glow,effect,en,de,github,lbeckx,javascript">
-    <meta property="og:title" content="Blink Generator CSS" />
-    <meta property="og:url" content="//glowgen.beck.freigabeserver.de/" />
+    <meta name="keywords" content="CSS3,css,keyframes,blink,glow,effect,en,de,github,lbeckx,javascript,html5,html">
+    <meta property="og:title" content="BlinkGenerator123 - blinkgenerator.webitfactory.com/" />
+    <meta property="og:url" content="//blinkgenerator.webitfactory.com/" />
     <meta property="og:image" content="/files/img/blink_shot.JPG" />
-    <meta property="og:description" content="Create your own blink-effect with keyframes in CSS" />
+    <meta property="og:description" content="Create your own blink-effect with keyframes in CSS3 - Checkout blinkgenerator.webitfactory.com" />
     <meta property="og:type"   content="website" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i" rel="stylesheet">
     <link rel="stylesheet" href="files/css/design.css">
@@ -27,7 +27,7 @@
 </head>
 <body>
 <div id="LEFT" class="infoBoxClose">
-    <div id="HEADER"><h1>Blink Generator</h1></div>
+    <div id="HEADER"><h1>BlinkGenerator123</h1></div>
     <div id="GLOWBLINK_BOX">
         <div id="GLOWBLINK_ELEMENT" class="animation"><noscript>Your browser does not support JavaScript! Please enable it...</noscript></div>
     </div>
